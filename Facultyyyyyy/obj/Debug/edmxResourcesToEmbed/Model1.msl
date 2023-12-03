@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="FacultysModelStoreContainer" CdmEntityContainer="FacultysEntities">
+    <EntitySetMapping Name="Adminns">
+      <EntityTypeMapping TypeName="FacultysModel.Adminn">
+        <MappingFragment StoreEntitySet="Adminn">
+          <ScalarProperty Name="user_namee" ColumnName="user_namee" />
+          <ScalarProperty Name="pass" ColumnName="pass" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="user_login">
+      <EntityTypeMapping TypeName="FacultysModel.user_login">
+        <MappingFragment StoreEntitySet="user_login">
+          <ScalarProperty Name="user_namee" ColumnName="user_namee" />
+          <ScalarProperty Name="passwordd" ColumnName="passwordd" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Userrs">
+      <EntityTypeMapping TypeName="FacultysModel.Userr">
+        <MappingFragment StoreEntitySet="Userr">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="namee" ColumnName="namee" />
+          <ScalarProperty Name="gender" ColumnName="gender" />
+          <ScalarProperty Name="Age" ColumnName="Age" />
+          <ScalarProperty Name="Addresss" ColumnName="Addresss" />
+          <ScalarProperty Name="Department" ColumnName="Department" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

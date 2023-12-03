@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="FacultysModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Adminn">
+    <Key>
+      <PropertyRef Name="user_namee" />
+    </Key>
+    <Property Name="user_namee" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="pass" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="user_login">
+    <Key>
+      <PropertyRef Name="user_namee" />
+    </Key>
+    <Property Name="user_namee" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="passwordd" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="Userr">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="namee" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="gender" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="Age" Type="Int32" />
+    <Property Name="Addresss" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="Department" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityContainer Name="FacultysEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Adminns" EntityType="Self.Adminn" />
+    <EntitySet Name="user_login" EntityType="Self.user_login" />
+    <EntitySet Name="Userrs" EntityType="Self.Userr" />
+  </EntityContainer>
+</Schema>

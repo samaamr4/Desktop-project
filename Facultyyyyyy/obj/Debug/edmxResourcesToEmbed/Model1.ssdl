@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="FacultysModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Adminn">
+    <Key>
+      <PropertyRef Name="user_namee" />
+    </Key>
+    <Property Name="user_namee" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="pass" Type="varchar" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="user_login">
+    <Key>
+      <PropertyRef Name="user_namee" />
+    </Key>
+    <Property Name="user_namee" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="passwordd" Type="varchar" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="Userr">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="namee" Type="varchar" MaxLength="100" />
+    <Property Name="gender" Type="varchar" MaxLength="100" />
+    <Property Name="Age" Type="int" />
+    <Property Name="Addresss" Type="varchar" MaxLength="100" />
+    <Property Name="Department" Type="varchar" MaxLength="100" />
+  </EntityType>
+  <EntityContainer Name="FacultysModelStoreContainer">
+    <EntitySet Name="Adminn" EntityType="Self.Adminn" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="user_login" EntityType="Self.user_login" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Userr" EntityType="Self.Userr" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>
